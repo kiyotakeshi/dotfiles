@@ -1,0 +1,38 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#FF0000"
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#FF0000",
+    "tab.activeBackground": "#3d3d3c",
+    "tab.activeForeground": "#04f78665",
+    "editorCursor.foreground": "#E30E27",
+    "editor.selectionHighlightBackground": "#999d71",
+    "editor.lineHighlightBorder": "#F7EFE8"
+  },
+  "indentRainbow.colors": [
+    "#3d3d3c",
+    "#6b6b6a",
+    "#0c0c0a",
+    "#414125",
+    "#1b153b",
+    "#4d0a36",
+    "#043d09",
+  ],
+  "files.associations": {
+    "**/*.yml": "ansible"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "python.pythonPath": "C:\\Users\\xiaomi\\Anaconda3\\python.exe",
+  "window.zoomLevel": 1,
+  "extensions.ignoreRecommendations": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "workbench.iconTheme": "Monokai Classic Icons",
+  "editor.minimap.enabled": true,
+  "workbench.colorTheme": "Default High Contrast"
+}

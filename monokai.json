@@ -1,0 +1,41 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#FF0000"
+    },
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#FF0000",
+        "tab.activeBackground": "#55551e",
+        "tab.activeForeground": "#04f78665",
+        "editorCursor.foreground": "#E30E27",
+        "editor.selectionHighlightBackground": "#999d71",
+        "editor.lineHighlightBorder": "#f710d1"
+    },
+    "indentRainbow.colors": [
+        "#3d3d3c",
+        "#6d6d6b",
+        "#04f78665",
+        "#2d2642",
+        "#440e0e",
+        "#3d3d3c",
+        "#6d6d6b",
+        "#04f78665",
+        "#2d2642",
+        "#440e0e",
+    ],
+    "workbench.colorTheme": "Monokai",
+    "files.associations": {
+        "**/*.yml": "ansible"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "window.zoomLevel": 1,
+    "extensions.ignoreRecommendations": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "workbench.iconTheme": "Monokai Classic Icons",
+    "editor.minimap.enabled": true
+}
