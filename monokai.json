@@ -30,7 +30,6 @@
         "**/*.yml": "ansible"
     },
     "explorer.confirmDragAndDrop": false,
-    "python.pythonPath": "/usr/local/bin/python3",
     "window.zoomLevel": 1,
     "extensions.ignoreRecommendations": true,
     "editor.formatOnPaste": true,
