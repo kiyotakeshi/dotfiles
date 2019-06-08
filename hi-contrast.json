@@ -26,7 +26,6 @@
     "**/*.yml": "ansible"
   },
   "explorer.confirmDragAndDrop": false,
-  "python.pythonPath": "C:\\Users\\xiaomi\\Anaconda3\\python.exe",
   "window.zoomLevel": 1,
   "extensions.ignoreRecommendations": true,
   "editor.formatOnPaste": true,
