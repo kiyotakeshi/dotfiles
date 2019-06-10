@@ -26,9 +26,6 @@
         "#440e0e",
     ],
     "workbench.colorTheme": "Monokai",
-    "files.associations": {
-        "**/*.yml": "ansible"
-    },
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 1,
     "extensions.ignoreRecommendations": true,
