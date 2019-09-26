@@ -1,3 +1,3 @@
 # Hyper
 
-# extention(automatically add apply .hyper.js)
+# extention(automatically add when apply .hyper.js)
