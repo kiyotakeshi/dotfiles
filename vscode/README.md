@@ -20,6 +20,7 @@
 - target file
     - markdown.json
     - pu.code-snippets
+    - html.json
 
 ```
 # create under
@@ -27,5 +28,5 @@
 
 # example
 ❰kiyotatakeshi❙~/Library/Application Support/Code/User/snippets❱✔≻ ls
-markdown.json    pu.code-snippets
+markdown.json    pu.code-snippets   html.json
 ```
