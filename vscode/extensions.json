@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "visualstudioexptteam.vscodeintellicode",
+        "coenraads.bracket-pair-colorizer",
+        "oderwat.indent-rainbow",
+        "vscode-icons-team.vscode-icons",
+        "wix.vscode-import-cost",
+        "donjayamanne.githistory",
+        "msjsdiag.debugger-for-chrome",
+        "wayou.vscode-todo-highlight",
+        "equinusocio.vsc-material-theme"
+    ]
+}

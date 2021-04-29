@@ -1,0 +1,115 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        // "editor.foreground": "#6ff08b",
+        // "editor.background": "#060606",
+        // "editor.findMatchBackground": "#f5f3f3",
+        // "editor.selectionBackground": "#FF0000",
+        // "editorCursor.foreground": "#E30E27",
+        // "editor.selectionHighlightBackground": "#999d71",
+        // "editor.lineHighlightBorder": "#fc06d3",
+        "editorLineNumber.foreground": "#6ff08b",
+        "editorLineNumber.activeForeground": "#fc06d3",
+        // "editorLink.activeForeground": "#ffea00",
+        "tab.activeBackground": "#3d3d3c",
+        "tab.activeForeground": "#04f78665",
+        "terminal.foreground": "#0ad403",
+        "terminal.ansiBlue": "#f53838",
+        "terminal.background": "#091d0f",
+        "terminalCursor.foreground": "#d9ff00",
+    },
+    // "indentRainbow.colors": [
+    //     "#3d3d3c",
+    //     "#04f78665",
+    //     "#2d2642",
+    //     "#440e0e",
+    //     "#3d3d3c",
+    //     "#04f78665",
+    //     "#2d2642",
+    //     "#440e0e"
+    // ],
+    "workbench.colorTheme": "Material Theme",
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    // "git.autofetch": true,
+    // "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "todohighlight.keywords": [
+        // {
+        //     "text": "#",
+        //     "color": "#999d71",
+        //     "backgroundColor": "#091d0f",
+        //     "overviewRulerColor": "grey"
+        // },
+        // {
+        //     "text": "//",
+        //     "color": "#999d71",
+        //     "backgroundColor": "#091d0f",
+        //     "overviewRulerColor": "grey"
+        // },
+        // {
+        //     "text": "rm ",
+        //     "color": "#f53838",
+        //     "border": "1px solid white",
+        //     "backgroundColor": "#091d0f",
+        // },
+        // {
+        //     "text": "changed",
+        //     "color": "#ffea00",
+        //     "border": "1px solid white",
+        //     "backgroundColor": "#091d0f",
+        // },
+        {
+            "text": "failed",
+            "color": "#f53838",
+            "border": "1px solid white",
+            "backgroundColor": "#091d0f"
+        },
+        {
+            "text": "error",
+            "color": "#f53838",
+            "border": "1px solid white",
+            "backgroundColor": "#091d0f"
+        },
+        {
+            "text": "exception",
+            "color": "#f53838",
+            "border": "1px solid white",
+            "backgroundColor": "#091d0f"
+        },
+        {
+            "text": "TODO:",
+            "color": "#091d0f",
+            "border": "1px solid red",
+            "backgroundColor": "#f5f3f3"
+        }
+    ],
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.txt",
+        "**/*.md"
+    ],
+    "todohighlight.isCaseSensitive": false,
+    "vim.handleKeys": {
+        "Command + p": true
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    // "editor.fontFamily": "ricty",
+    "window.zoomLevel": 1
+}
