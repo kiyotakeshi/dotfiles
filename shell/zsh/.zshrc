@@ -1,3 +1,5 @@
+# ------------------
+# general
 PROMPT='$ '
 
 ## タブ補完時に大文字小文字を区別しない
@@ -11,18 +13,18 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-## Aliasの設定
-# core
+## Alias
 alias ll='ls -l'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# custom
 alias iterm='open -a ~/Applications/iTerm.app .'
+alias fork='open -a /Applications/Fork.app .'
 # alias cat=bat
 
-# pecoの設定(cortrol+rで呼び出し)
+# ------------------
+# peco
+## cortrol+rで呼び出し
 function peco-history-selection() {
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
     CURSOR=$#BUFFER
@@ -32,20 +34,20 @@ function peco-history-selection() {
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 
-# デフォルトで使用するjdk
+# ------------------
+# JDK
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 # export JAVA_HOME=`/usr/libexec/java_home -v 14`
 # export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
 
+# ------------------
 # zplug
 source ~/.zplug/init.zsh
-
-# タイプ補完
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-completions"
 
-# Install plugins if there are plugins that have not been installed
+## Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
   printf "Install? [y/N]: "
   if read -q; then
@@ -53,8 +55,10 @@ if ! zplug check --verbose; then
   fi
 fi
 
+# ------------------
 # direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
-# anyenv
-eval "$(anyenv init -)"
+# ------------------
+# asdf
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
