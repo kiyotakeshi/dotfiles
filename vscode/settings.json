@@ -1,42 +1,81 @@
 {
+    // ----------------------------------
+    // core
     "files.autoSave": "afterDelay",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#06d265",
+        "editorLineNumber.foreground": "#6ff08b",
+        "editorLineNumber.activeForeground": "#fc06d3",
         // "editor.foreground": "#6ff08b",
         // "editor.background": "#060606",
         // "editor.findMatchBackground": "#f5f3f3",
         // "editor.selectionBackground": "#FF0000",
-        // "editorCursor.foreground": "#E30E27",
         // "editor.selectionHighlightBackground": "#999d71",
         // "editor.lineHighlightBorder": "#fc06d3",
-        "editorLineNumber.foreground": "#6ff08b",
-        "editorLineNumber.activeForeground": "#fc06d3",
         // "editorLink.activeForeground": "#ffea00",
         "tab.activeBackground": "#3d3d3c",
         "tab.activeForeground": "#04f78665",
         "terminal.foreground": "#0ad403",
         "terminal.ansiBlue": "#f53838",
         "terminal.background": "#091d0f",
-        "terminalCursor.foreground": "#d9ff00",
+        "terminalCursor.foreground": "#d9ff00"
     },
-    // "indentRainbow.colors": [
-    //     "#3d3d3c",
-    //     "#04f78665",
-    //     "#2d2642",
-    //     "#440e0e",
-    //     "#3d3d3c",
-    //     "#04f78665",
-    //     "#2d2642",
-    //     "#440e0e"
-    // ],
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.reduceMotion": "on",
+    "workbench.statusBar.visible": false,
+    "workbench.iconTheme": "material-icon-theme",
+    // "workbench.colorTheme": "GitHub Dark Default",
     "workbench.colorTheme": "Material Theme",
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
-    // "git.autofetch": true,
-    // "editor.suggestSelection": "first",
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true, // default is `active`
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.roundedSelection": false,
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "phase",
+    "editor.suggestSelection": "first",
+    "editor.accessibilitySupport": "off",
+    "editor.minimap.autohide": true,
+    // 入力時、コードを自動的に整形
+    "editor.formatOnType": true,
+    "window.zoomLevel": 1,
+    // ファイルのパンくずリスト
+    "breadcrumbs.enabled": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        // ペースト時、自動的に整形しない
+        "editor.formatOnPaste": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[haskell]": {
+        "editor.defaultFormatter": "haskell.haskell"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.external.osxExec": "terminal.app",
+    "explorer.compactFolders": false,
+    "search.smartCase": true,
+    // 単語登録
+    "cSpell.userWords": [
+        "autofetch",
+        "autohide",
+        "fuga",
+        "hoge",
+        "rgba",
+        "tabnine",
+        "todohighlight",
+        "vsintellicode"
+    ],
+    "explorer.confirmDragAndDrop": false,
+
+    // ----------------------------------
+    // extensions
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "todohighlight.keywords": [
         // {
@@ -107,9 +146,18 @@
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
-            "after": ["<Esc>"]
+            "after": ["<Esc>"],
         }
     ],
-    // "editor.fontFamily": "ricty",
-    "window.zoomLevel": 1
+    "redhat.telemetry.enabled": false,
+    "tabnine.experimentalAutoImports": true,
+    "jest.autoRun": "off",
+    "git.autofetch": true,
+    "haskell.manageHLS": "GHCup",
+    "indentRainbow.ignoreErrorLanguages": ["markdown", "haskell"],
+    "indentRainbow.colors": [
+        "rgba(111, 115, 30, 0.24)",
+        "rgba(30, 115, 102, 0.24)",
+        "rgba(85, 30, 115, 0.24)"
+    ]
 }
