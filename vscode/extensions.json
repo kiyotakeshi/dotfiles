@@ -1,15 +1,31 @@
 {
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "visualstudioexptteam.vscodeintellicode",
-        "coenraads.bracket-pair-colorizer",
-        "oderwat.indent-rainbow",
-        "vscode-icons-team.vscode-icons",
-        "wix.vscode-import-cost",
-        "donjayamanne.githistory",
-        "msjsdiag.debugger-for-chrome",
-        "wayou.vscode-todo-highlight",
-        "equinusocio.vsc-material-theme"
-    ]
+   "recommendations": [
+       "esbenp.prettier-vscode",
+       "orta.vscode-jest",
+       "streetsidesoftware.code-spell-checker",
+       "waderyan.gitblame",
+       "mhutchie.git-graph",
+       "ecmel.vscode-html-css",
+       "wix.vscode-import-cost",
+       "oderwat.indent-rainbow",
+       "visualstudioexptteam.vscodeintellicode",
+       "visualstudioexptteam.intellicode-api-usage-examples",
+       "ibm.output-colorizer",
+       "ionutvmi.path-autocomplete",
+       "mechatroner.rainbow-csv",
+       "wayou.vscode-todo-highlight",
+       "shardulm94.trailing-spaces",
+       "jrebocho.vscode-random",
+       "mosapride.zenkaku",
+       "hediet.vscode-drawio",
+       "editorconfig.editorconfig",
+       "dbaeumer.vscode-eslint",
+       "haskell.haskell",
+       "justusadam.language-haskell",
+       "davidanson.vscode-markdownlint",
+       "pkief.material-icon-theme",
+       "equinusocio.vsc-material-theme",
+       "42crunch.vscode-openapi",
+       "rangav.vscode-thunder-client"
+   ]
 }
