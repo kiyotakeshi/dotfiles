@@ -42,5 +42,15 @@
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward",
         "when": "canNavigateForward"
+    },
+    {
+        "key": "shift+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     }
 ]
