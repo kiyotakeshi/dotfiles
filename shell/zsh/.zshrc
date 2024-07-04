@@ -1,64 +1,72 @@
-# ------------------
-# general
-PROMPT='$ '
+# -----------
+# zplug 
+## `brew install zplug`
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
-## タブ補完時に大文字小文字を区別しない
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# Load theme file
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-## 日本語ファイル名を表示可能にする
-setopt print_eight_bit
+# 非同期処理できるようになる
+zplug "mafredri/zsh-async"
 
-## ヒストリの設定
-HISTFILE=~/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=1000000
+# テーマ
+zplug "sindresorhus/pure"
 
-## Alias
-alias ll='ls -l'
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias iterm='open -a ~/Applications/iTerm.app .'
-alias fork='open -a /Applications/Fork.app .'
-# alias cat=bat
-
-# ------------------
-# peco
-## cortrol+rで呼び出し
-function peco-history-selection() {
-    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-    CURSOR=$#BUFFER
-    zle reset-prompt
-}
-
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
-
-# ------------------
-# JDK
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
-# export JAVA_HOME=`/usr/libexec/java_home -v 14`
-# export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-
-# ------------------
-# zplug
-source ~/.zplug/init.zsh
-zplug "zsh-users/zsh-autosuggestions"
+# 構文のハイライト(https://github.com/zsh-users/zsh-syntax-highlighting)
 zplug "zsh-users/zsh-syntax-highlighting"
+
+# コマンド入力途中で上下キー押したときの過去履歴がいい感じに出るようになる
+zplug "zsh-users/zsh-history-substring-search"
+
+# 過去に入力したコマンドの履歴が灰色のサジェストで出る
+zplug "zsh-users/zsh-autosuggestions"
+
+# 補完強化
 zplug "zsh-users/zsh-completions"
 
-## Install plugins if there are plugins that have not been installed
+# 256色表示にする
+zplug "chrissicool/zsh-256color"
+
+# コマンドライン上の文字リテラルの絵文字を emoji 化する
+zplug "mrowa44/emojify", as:command
+
+# alias の代わり
+zplug "olets/zsh-abbr"
+
+# Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
 fi
+zplug load
 
-# ------------------
-# direnv
-# eval "$(direnv hook zsh)"
+# -----------
+# mise
+## https://mise.jdx.dev/getting-started.html
+eval "$(~/.local/bin/mise activate zsh)"
 
-# ------------------
-# asdf
-# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# -----------
+# abbr
+## `alias ll='ls -lha'` のように書ける
+abbr -S ll='ls -lha'
+
+# -----------
+# fzf
+## `brew install fzf`
+source <(fzf --zsh)
+
+# -----------
+# general
+## terminal の表示はシンプルにしたい
+export PS1="$ "
+
+
+
+# -----------
+# command snippet
+## 標準出力に出しながらクリップボードに(Warp など使うなら不要)
+## `cat ~/gitdir/sample/sample.json | tee >(pbcopy)`
+
