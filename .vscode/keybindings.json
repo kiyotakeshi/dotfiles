@@ -1,0 +1,63 @@
+// Place your key bindings in this file to override the defaults
+[
+  // IntelliJ の structure と同じショートカットにする
+  {
+    "key": "cmd+7",
+    "command": "outline.focus"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.view.testing.focus"
+  },
+  // 定義への移動は頻出なのでホームポジションから動かしたくない
+  {
+    "key": "cmd+b",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "workbench.action.closeSidebar"
+  },
+  // 折りたたみのショートカット変更
+  {
+    "key": "shift+alt+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+[",
+    "command": "-editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+alt+]",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+]",
+    "command": "-editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  // 2回押さないと閉じないようにする
+  {
+    "key": "cmd+q cmd+q",
+    "command": "workbench.action.quit"
+  },
+  {
+    "key": "cmd+q",
+    "command": "-workbench.action.quit"
+  },
+  // 2回押さないと閉じないようにする
+  {
+    "key": "cmd+w cmd+w",
+    "command": "workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  }
+]

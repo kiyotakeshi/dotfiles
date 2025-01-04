@@ -24,7 +24,7 @@
     "workbench.tree.renderIndentGuides": "always",
     "workbench.reduceMotion": "on",
     "workbench.statusBar.visible": false,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vs-seti",
     // "workbench.colorTheme": "GitHub Dark Default",
     "workbench.colorTheme": "Material Theme",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -43,7 +43,7 @@
     "editor.formatOnType": true,
     "window.zoomLevel": 1,
     // ファイルのパンくずリスト
-    "breadcrumbs.enabled": false,
+    // "breadcrumbs.enabled": false,
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
         // ペースト時、自動的に整形しない
@@ -52,11 +52,11 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[haskell]": {
-        "editor.defaultFormatter": "haskell.haskell"
-    },
+    // "[haskell]": {
+    //     "editor.defaultFormatter": "haskell.haskell"
+    // },
     "diffEditor.ignoreTrimWhitespace": false,
-    "terminal.external.osxExec": "terminal.app",
+    "terminal.external.osxExec": "Ghostty.app",
     "explorer.compactFolders": false,
     "search.smartCase": true,
     // 単語登録
@@ -140,24 +140,24 @@
         "**/*.md"
     ],
     "todohighlight.isCaseSensitive": false,
-    "vim.handleKeys": {
-        "Command + p": true
-    },
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"],
-        }
-    ],
-    "redhat.telemetry.enabled": false,
-    "tabnine.experimentalAutoImports": true,
-    "jest.autoRun": "off",
+    // "vim.handleKeys": {
+    //     "Command + p": true
+    // },
+    // "vim.insertModeKeyBindings": [
+    //     {
+    //         "before": ["j", "j"],
+    //         "after": ["<Esc>"]
+    //     }
+    // ],
+    "jest.runMode": {
+        "type": "on-demand"
+      },
     "git.autofetch": true,
-    "haskell.manageHLS": "GHCup",
-    "indentRainbow.ignoreErrorLanguages": ["markdown", "haskell"],
-    "indentRainbow.colors": [
-        "rgba(111, 115, 30, 0.24)",
-        "rgba(30, 115, 102, 0.24)",
-        "rgba(85, 30, 115, 0.24)"
-    ]
+    // "haskell.manageHLS": "GHCup",
+    // "indentRainbow.ignoreErrorLanguages": ["markdown", "haskell"],
+    // "indentRainbow.colors": [
+    //     "rgba(111, 115, 30, 0.24)",
+    //     "rgba(30, 115, 102, 0.24)",
+    //     "rgba(85, 30, 115, 0.24)"
+    // ]
 }

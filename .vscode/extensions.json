@@ -5,11 +5,11 @@
         "streetsidesoftware.code-spell-checker",
         "waderyan.gitblame",
         "mhutchie.git-graph",
+        "eamodio.gitlens",
         "ecmel.vscode-html-css",
         "wix.vscode-import-cost",
         "oderwat.indent-rainbow",
         "visualstudioexptteam.vscodeintellicode",
-        "visualstudioexptteam.intellicode-api-usage-examples",
         "ibm.output-colorizer",
         "ionutvmi.path-autocomplete",
         "mechatroner.rainbow-csv",
@@ -26,6 +26,14 @@
         "pkief.material-icon-theme",
         "equinusocio.vsc-material-theme",
         "42crunch.vscode-openapi",
-        "rangav.vscode-thunder-client"
+        "rangav.vscode-thunder-client",
+        "github.copilot",
+        "github.copilot-chat",
+        "graphql.vscode-graphql",
+        "graphql.vscode-graphql-syntax",
+        "ms-vscode.makefile-tools",
+        "bierner.markdown-mermaid",
+        "bibhasdn.unique-lines",
+        "nick-lvov-dev.typescript-explicit-types"
     ]
 }

@@ -51,7 +51,12 @@ eval "$(~/.local/bin/mise activate zsh)"
 # -----------
 # abbr
 ## `alias ll='ls -lha'` のように書ける
-abbr -S ll='ls -lha'
+abbr -S today='echo $(date +%Y-%m-%d) | pbcopy'
+abbr -S now='echo $(date +%Y-%m-%d-%H-%M) | pbcopy'
+abbr -S 'g head'='git rev-parse --abbrev-ref HEAD | pbcopy'
+abbr -S 'g branch-cleanup'='git switch main && echo before: $(git branch | wc -l) && echo delete unused branch && git branch | grep -v "main" | xargs git branch -d && echo after: $(git branch | wc -l)'
+abbr -S 'gs'='git branch | fzf | xargs git switch'
+abbr -S 'gui'='gitui'
 
 # -----------
 # fzf
@@ -70,3 +75,7 @@ export PS1="$ "
 ## 標準出力に出しながらクリップボードに(Warp など使うなら不要)
 ## `cat ~/gitdir/sample/sample.json | tee >(pbcopy)`
 
+# -----------
+# for AWS
+# export AWS_PROFILE=dev
+export AWS_DEFAULT_REGION=ap-northeast-1
