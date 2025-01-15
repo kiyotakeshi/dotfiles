@@ -25,6 +25,7 @@
     "workbench.reduceMotion": "on",
     "workbench.statusBar.visible": false,
     "workbench.iconTheme": "vs-seti",
+    "workbench.activityBar.location": "hidden",
     // "workbench.colorTheme": "GitHub Dark Default",
     "workbench.colorTheme": "Material Theme",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -41,6 +42,21 @@
     "editor.minimap.autohide": true,
     // 入力時、コードを自動的に整形
     "editor.formatOnType": true,
+    // inlay hints
+    "javascript.inlayHints.enumMemberValues.enabled": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "editor.inlayHints.fontSize": 4,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+
     "window.zoomLevel": 1,
     // ファイルのパンくずリスト
     // "breadcrumbs.enabled": false,
@@ -56,7 +72,6 @@
     //     "editor.defaultFormatter": "haskell.haskell"
     // },
     "diffEditor.ignoreTrimWhitespace": false,
-    "terminal.external.osxExec": "Ghostty.app",
     "explorer.compactFolders": false,
     "search.smartCase": true,
     // 単語登録
