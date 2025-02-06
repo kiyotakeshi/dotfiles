@@ -8,20 +8,16 @@
         "eamodio.gitlens",
         "ecmel.vscode-html-css",
         "wix.vscode-import-cost",
-        "oderwat.indent-rainbow",
         "visualstudioexptteam.vscodeintellicode",
         "ibm.output-colorizer",
         "ionutvmi.path-autocomplete",
         "mechatroner.rainbow-csv",
-        "wayou.vscode-todo-highlight",
         "shardulm94.trailing-spaces",
         "jrebocho.vscode-random",
         "mosapride.zenkaku",
         "hediet.vscode-drawio",
         "editorconfig.editorconfig",
         "dbaeumer.vscode-eslint",
-        "haskell.haskell",
-        "justusadam.language-haskell",
         "davidanson.vscode-markdownlint",
         "pkief.material-icon-theme",
         "equinusocio.vsc-material-theme",
@@ -34,6 +30,7 @@
         "ms-vscode.makefile-tools",
         "bierner.markdown-mermaid",
         "bibhasdn.unique-lines",
-        "nick-lvov-dev.typescript-explicit-types"
+        "nick-lvov-dev.typescript-explicit-types",
+        "vscodevim.vim"
     ]
 }

@@ -16,7 +16,7 @@
         // "editorLink.activeForeground": "#ffea00",
         "tab.activeBackground": "#3d3d3c",
         "tab.activeForeground": "#04f78665",
-        "terminal.foreground": "#0ad403"
+        // "terminal.foreground": "#0ad403"
         // "terminal.ansiBlue": "#f53838",
         // "terminal.background": "#091d0f",
         // "terminalCursor.foreground": "#d9ff00"
@@ -27,7 +27,7 @@
     "workbench.iconTheme": "vs-seti",
     "workbench.activityBar.location": "hidden",
     // "workbench.colorTheme": "GitHub Dark Default",
-    "workbench.colorTheme": "Material Theme",
+    // "workbench.colorTheme": "Material Theme",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
@@ -42,6 +42,7 @@
     "editor.minimap.autohide": true,
     // 入力時、コードを自動的に整形
     "editor.formatOnType": true,
+
     // inlay hints
     "javascript.inlayHints.enumMemberValues.enabled": true,
     "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -68,9 +69,6 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    // "[haskell]": {
-    //     "editor.defaultFormatter": "haskell.haskell"
-    // },
     "diffEditor.ignoreTrimWhitespace": false,
     "explorer.compactFolders": false,
     "search.smartCase": true,
@@ -92,87 +90,59 @@
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "todohighlight.keywords": [
-        // {
-        //     "text": "#",
-        //     "color": "#999d71",
-        //     "backgroundColor": "#091d0f",
-        //     "overviewRulerColor": "grey"
-        // },
-        // {
-        //     "text": "//",
-        //     "color": "#999d71",
-        //     "backgroundColor": "#091d0f",
-        //     "overviewRulerColor": "grey"
-        // },
-        // {
-        //     "text": "rm ",
-        //     "color": "#f53838",
-        //     "border": "1px solid white",
-        //     "backgroundColor": "#091d0f",
-        // },
-        // {
-        //     "text": "changed",
-        //     "color": "#ffea00",
-        //     "border": "1px solid white",
-        //     "backgroundColor": "#091d0f",
-        // },
+    "git.autofetch": true,
+    "git.autoRepositoryDetection": true,
+
+    // vim
+    // 文字の入力
+    // i はカーソルの前から insert mode, a はカーソルの後ろから insert mode
+    // shift + a は行末から insert mode
+    // shift + i は行頭から insert mode
+
+    // normal mode で dw はカーソルから単語の最後まで削除
+    // yiw(yank inner word) はカーソルから単語の最後までコピー
+    // diw(delete inner word) はカーソルから単語の最後まで削除
+    // d$ はカーソルから行末まで削除(クリップボードに入る)
+
+    // shift + v で visual line mode
+
+    // 範囲の中を消してから入力
+    // aaahoge (fuga) {hoge} fuga
+    // <div>hoge</div>
+    // ciw(change=消した後入力, inner word) で単語を削除して insert mode になる
+    // ci( で () 括弧の中身を削除して insert mode になる
+    // ci{ で {} 括弧の中身を削除して insert mode になる
+    // cit で <tag> </tag> の中身を削除して insert mode になる
+
+    // <div>fuga</div>
+    // dst(delete surrond tag) で <div> </div> を削除
+
+    // 'hoge fuga hoge arigata q'
+    // cs ' ` で ' を ` に変更
+    // hostnama
+    // r 入れ替える文字 で一文字置換
+    // hoge fuga
+
+    // OS側とのクリップボードの共有
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "Command + p": true,
+        "<C-a>": false,
+        "<C-e>": false,
+        "<C-f>": false
+        // open recent がつかえなくなるが redo の方が重要と判断
+        // "<C-r>": false
+    },
+    "vim.insertModeKeyBindings": [
         {
-            "text": "failed",
-            "color": "#f53838",
-            "border": "1px solid white",
-            "backgroundColor": "#091d0f"
-        },
-        {
-            "text": "error",
-            "color": "#f53838",
-            "border": "1px solid white",
-            "backgroundColor": "#091d0f"
-        },
-        {
-            "text": "exception",
-            "color": "#f53838",
-            "border": "1px solid white",
-            "backgroundColor": "#091d0f"
-        },
-        {
-            "text": "TODO:",
-            "color": "#091d0f",
-            "border": "1px solid red",
-            "backgroundColor": "#f5f3f3"
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
         }
     ],
-    "todohighlight.include": [
-        "**/*.js",
-        "**/*.jsx",
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.html",
-        "**/*.php",
-        "**/*.css",
-        "**/*.scss",
-        "**/*.txt",
-        "**/*.md"
-    ],
-    "todohighlight.isCaseSensitive": false,
-    // "vim.handleKeys": {
-    //     "Command + p": true
-    // },
-    // "vim.insertModeKeyBindings": [
-    //     {
-    //         "before": ["j", "j"],
-    //         "after": ["<Esc>"]
-    //     }
-    // ],
-    "jest.runMode": {
-        "type": "on-demand"
-    },
-    "git.autofetch": true
-    // "haskell.manageHLS": "GHCup",
-    // "indentRainbow.ignoreErrorLanguages": ["markdown", "haskell"],
-    // "indentRainbow.colors": [
-    //     "rgba(111, 115, 30, 0.24)",
-    //     "rgba(30, 115, 102, 0.24)",
-    //     "rgba(85, 30, 115, 0.24)"
-    // ]
+    // 画面内の特定の文字に移動できる
+    // space → space → s → 移動したい文字 → 記号
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    // "vim.useCtrlKeys": true,
 }
+
