@@ -23,7 +23,6 @@
     },
     "workbench.tree.renderIndentGuides": "always",
     "workbench.reduceMotion": "on",
-    "workbench.statusBar.visible": false,
     "workbench.iconTheme": "vs-seti",
     "workbench.activityBar.location": "hidden",
     // "workbench.colorTheme": "GitHub Dark Default",
@@ -70,6 +69,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.external.osxExec": "Ghostty.app",
     "explorer.compactFolders": false,
     "search.smartCase": true,
     // 単語登録
@@ -98,21 +98,37 @@
     // i はカーソルの前から insert mode, a はカーソルの後ろから insert mode
     // shift + a は行末から insert mode
     // shift + i は行頭から insert mode
+    // s は現在位置の文字を削除して insert mode
 
     // normal mode で dw はカーソルから単語の最後まで削除
     // yiw(yank inner word) はカーソルから単語の最後までコピー
     // diw(delete inner word) はカーソルから単語の最後まで削除
-    // d$ はカーソルから行末まで削除(クリップボードに入る)
+    // d$ or D はカーソルから行末まで削除(クリップボードに入る)
+    // db はカーソルから単語の最初まで削除(クリップボードに入る)
+    // x はカーソルの文字を削除(クリップボードに入る)
+    // hoge hoge
+
+    // gg でファイルの先頭に移動, G でファイルの最後に移動
 
     // shift + v で visual line mode
+    // visual mode で 0 で始点と終点をトグル
 
     // 範囲の中を消してから入力
     // aaahoge (fuga) {hoge} fuga
     // <div>hoge</div>
-    // ciw(change=消した後入力, inner word) で単語を削除して insert mode になる
+    // cw(change=消した後入力, word) で単語を削除して insert mode になる
     // ci( で () 括弧の中身を削除して insert mode になる
     // ci{ で {} 括弧の中身を削除して insert mode になる
     // cit で <tag> </tag> の中身を削除して insert mode になる
+    // C でカーソルから行末まで削除して insert mode になる
+    // hoge fuga
+    // hello vim
+
+    // f " で " まで移動, ; で次の " まで移動, , で前の " まで移動
+    // <link rel="stylesheet" href="./styles/style.css" />
+    // zz でカーソルが画面の中央にくるようにスクロール
+    // :数字 でその行に移動
+    // * でカーソルの単語を検索して移動
 
     // <div>fuga</div>
     // dst(delete surrond tag) で <div> </div> を削除
@@ -121,6 +137,9 @@
     // cs ' ` で ' を ` に変更
     // hostnama
     // r 入れ替える文字 で一文字置換
+    // R で上書きモード
+    // ~ でカーソル位置の文字を大文字小文字変換
+    // guw で単語を小文字に変換, gUw で単語を大文字に変換
     // hoge fuga
 
     // OS側とのクリップボードの共有
