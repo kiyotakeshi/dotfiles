@@ -25,6 +25,7 @@
     "workbench.reduceMotion": "on",
     "workbench.iconTheme": "vs-seti",
     "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "single",
     // "workbench.colorTheme": "GitHub Dark Default",
     // "workbench.colorTheme": "Material Theme",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -79,17 +80,14 @@
         "fuga",
         "hoge",
         "rgba",
-        "tabnine",
-        "todohighlight",
-        "vsintellicode"
     ],
     "explorer.confirmDragAndDrop": false,
 
     // ----------------------------------
     // extensions
+    "material-icon-theme.hidesExplorerArrows": true,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "git.autofetch": true,
     "git.autoRepositoryDetection": true,
 

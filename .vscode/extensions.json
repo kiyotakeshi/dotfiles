@@ -1,5 +1,6 @@
 {
     "recommendations": [
+        "pkief.material-icon-theme",
         "esbenp.prettier-vscode",
         "orta.vscode-jest",
         "streetsidesoftware.code-spell-checker",
