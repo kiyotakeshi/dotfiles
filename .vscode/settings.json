@@ -109,7 +109,7 @@
     // gg でファイルの先頭に移動, G でファイルの最後に移動
 
     // shift + v で visual line mode
-    // visual mode で 0 で始点と終点をトグル
+    // visual mode で o で始点と終点をトグル
 
     // 範囲の中を消してから入力
     // aaahoge (fuga) {hoge} fuga
