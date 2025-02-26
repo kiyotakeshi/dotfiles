@@ -15,30 +15,10 @@
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider"
     },
+    // 本来 cmd+b だったのを変更
     {
         "key": "alt+cmd+b",
         "command": "workbench.action.closeSidebar"
-    },
-    // 折りたたみのショートカット変更
-    {
-        "key": "shift+alt+[",
-        "command": "editor.fold",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "alt+cmd+[",
-        "command": "-editor.fold",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "shift+alt+]",
-        "command": "editor.unfold",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "alt+cmd+]",
-        "command": "-editor.unfold",
-        "when": "editorTextFocus && foldingEnabled"
     },
     // 2回押さないと閉じないようにする
     {
@@ -69,5 +49,16 @@
     {
         "key": "ctrl+a",
         "command": "cursorHome"
+    },
+    // US keyboard の入力切り替えとぶつかるため
+    {
+        "key": "shift+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     }
 ]
