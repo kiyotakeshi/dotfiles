@@ -1,37 +1,51 @@
 {
     "recommendations": [
-        "pkief.material-icon-theme",
-        "esbenp.prettier-vscode",
-        "orta.vscode-jest",
-        "streetsidesoftware.code-spell-checker",
+        // Copilot
+        "github.copilot",
+        "github.copilot-chat",
+
+        // git
         "waderyan.gitblame",
         "mhutchie.git-graph",
         "eamodio.gitlens",
+
+        // HTML, CSS
         "ecmel.vscode-html-css",
-        "wix.vscode-import-cost",
+        "formulahendry.auto-rename-tag",
         "visualstudioexptteam.vscodeintellicode",
-        "ibm.output-colorizer",
-        "ionutvmi.path-autocomplete",
-        "mechatroner.rainbow-csv",
-        "shardulm94.trailing-spaces",
-        "jrebocho.vscode-random",
-        "mosapride.zenkaku",
-        "hediet.vscode-drawio",
-        "editorconfig.editorconfig",
+        "bradlc.vscode-tailwindcss",
+
+        // JS, TS
         "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
         "davidanson.vscode-markdownlint",
-        "pkief.material-icon-theme",
-        "equinusocio.vsc-material-theme",
         "42crunch.vscode-openapi",
-        "rangav.vscode-thunder-client",
-        "github.copilot",
-        "github.copilot-chat",
+        "nick-lvov-dev.typescript-explicit-types",
+        "wix.vscode-import-cost",
+        "dsznajder.es7-react-js-snippets",
+        "YoavBls.pretty-ts-errors",
+        "MylesMurphy.prettify-ts",
+
+        // GraphQL
         "graphql.vscode-graphql",
         "graphql.vscode-graphql-syntax",
+
+        // misc
+        "vscodevim.vim",
+        "streetsidesoftware.code-spell-checker",
+        "ionutvmi.path-autocomplete",
+        "jrebocho.vscode-random",
+        "bibhasdn.unique-lines",
+        "editorconfig.editorconfig",
         "ms-vscode.makefile-tools",
         "bierner.markdown-mermaid",
-        "bibhasdn.unique-lines",
-        "nick-lvov-dev.typescript-explicit-types",
-        "vscodevim.vim"
+        "quicktype.quicktype", // Paste JSON as Code
+
+        // Appearance
+        "pkief.material-icon-theme",
+        "enkia.tokyo-night",
+        "ibm.output-colorizer",
+        "mechatroner.rainbow-csv",
+        "shardulm94.trailing-spaces"
     ]
 }

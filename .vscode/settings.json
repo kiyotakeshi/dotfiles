@@ -5,7 +5,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#06d265",
-        "editorLineNumber.foreground": "#6ff08b",
+        // "editorLineNumber.foreground": "#6ff08b",
         "editorLineNumber.activeForeground": "#fc06d3",
         // "editor.foreground": "#6ff08b",
         // "editor.background": "#060606",
@@ -15,7 +15,7 @@
         // "editor.lineHighlightBorder": "#fc06d3",
         // "editorLink.activeForeground": "#ffea00",
         "tab.activeBackground": "#3d3d3c",
-        "tab.activeForeground": "#04f78665",
+        // "tab.activeForeground": "#04f78665",
         // "terminal.foreground": "#0ad403"
         // "terminal.ansiBlue": "#f53838",
         // "terminal.background": "#091d0f",
@@ -26,7 +26,6 @@
     "workbench.iconTheme": "vs-seti",
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
-    // "workbench.colorTheme": "GitHub Dark Default",
     // "workbench.colorTheme": "Material Theme",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
