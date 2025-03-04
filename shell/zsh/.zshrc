@@ -55,6 +55,7 @@ abbr -S today='echo $(date +%Y-%m-%d) | pbcopy'
 abbr -S now='echo $(date +%Y-%m-%d-%H-%M) | pbcopy'
 abbr -S 'g head'='git rev-parse --abbrev-ref HEAD | pbcopy'
 abbr -S 'g branch-cleanup'='git switch main && echo before: $(git branch | wc -l) && echo delete unused branch && git branch | grep -v "main" | xargs git branch -d && echo after: $(git branch | wc -l)'
+abbr -S 'g-rebase'='current_branch=$(git rev-parse --abbrev-ref HEAD) && git checkout main && git pull && git checkout $current_branch && git rebase main'
 abbr -S 'gs'='git branch | fzf | xargs git switch'
 abbr -S 'gui'='gitui'
 

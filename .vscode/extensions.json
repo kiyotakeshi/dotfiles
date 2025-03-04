@@ -40,6 +40,7 @@
         "ms-vscode.makefile-tools",
         "bierner.markdown-mermaid",
         "quicktype.quicktype", // Paste JSON as Code
+        "alefragnani.Bookmarks",
 
         // Appearance
         "pkief.material-icon-theme",
