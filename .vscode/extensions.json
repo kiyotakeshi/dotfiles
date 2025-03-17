@@ -47,6 +47,7 @@
         "enkia.tokyo-night",
         "ibm.output-colorizer",
         "mechatroner.rainbow-csv",
-        "shardulm94.trailing-spaces"
+        "shardulm94.trailing-spaces",
+        "habibium.toggle-relative-line-numbers"
     ]
 }

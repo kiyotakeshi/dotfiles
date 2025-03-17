@@ -60,5 +60,37 @@
         "key": "ctrl+space",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    // VSCode の NES の suggestion と vim の escape がぶつかるため、 F1 で NES の suggestion を閉じる
+    {
+        "key": "f1",
+        "command": "editor.action.inlineSuggest.hide",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "shift+escape",
+        "command": "-editor.action.inlineSuggest.hide",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "escape",
+        "command": "-editor.action.inlineSuggest.hide",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "f1",
+        "command": "editor.action.inlineSuggest.hide",
+        "when": "inlineEditIsVisible || inlineSuggestionVisible"
+    },
+    {
+        "key": "escape",
+        "command": "-editor.action.inlineSuggest.hide",
+        "when": "inlineEditIsVisible || inlineSuggestionVisible"
+    },
+    // goToReferences は頻出なのでホームポジションから動かしたくない
+    {
+        "key": "shift+cmd+b",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && !inReferenceSearchEditor && !isInEmbeddedEditor"
     }
 ]
