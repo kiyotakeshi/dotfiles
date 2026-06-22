@@ -20,12 +20,7 @@
   },
   {
     "bindings": {
-      "shift-l": "agent::FocusAgent"
-    }
-  },
-  {
-    "bindings": {
-      "shift-e": "editor::ToggleFocus"
-    }
+      "cmd-k cmd-c": "workspace::CopyRelativePath",
+    },
   }
 ]

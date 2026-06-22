@@ -38,7 +38,7 @@
     "editor.cursorBlinking": "phase",
     "editor.suggestSelection": "first",
     "editor.accessibilitySupport": "off",
-    "editor.minimap.autohide": true,
+    "editor.minimap.autohide": "mouseover",
     // 入力時、コードを自動的に整形
     "editor.formatOnType": true,
 
